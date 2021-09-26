@@ -3,7 +3,7 @@ import PyPDF2
 import find
 book = open('Clifford D Simak - The Visitors - 1980.pdf', 'rb')
 
-print(find.finfdi())
+print(find.findi())
 
 pdfReader = PyPDF2.PdfFileReader(book)
 pages = pdfReader.numPages

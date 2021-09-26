@@ -1,10 +1,10 @@
 from os import path
 
 
-def finfdi():
-    import os
+import os
+def findi(pa=os.getcwd()):
     z=[]
-    for root, dirs, files in os.walk(os.getcwd()):
+    for root, dirs, files in os.walk(pa):
         for file in files:
             if '.git' not in root:
                 path_file = os.path.join(root,file)
